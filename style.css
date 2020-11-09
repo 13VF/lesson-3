@@ -1,33 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #17252A;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.center {
+  padding: 0 calc(50% - 570px);
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.mainHeading {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.cardsBox {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  align-content: space-between;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  max-width: 500px;
+  max-width: 320px;
   width: 100%;
-  padding: 30px 30px 60px;
-  margin: 0 15px 30px;
-  border: 1px solid black;
-  background-color: #f2f3f5;
-  border-radius: 30px;
+  padding: 30px 20px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #FEFFFF;
+  border-radius: 14px;
 }
 
 .card_image {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 130px;
+  margin-bottom: 16px;
+}
+
+.card_header {
+  text-align: center;
 }
 
 .card_button {
-  padding: 6px 12px;
+  padding: 8px 14px;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #FEFFFF;
   border: none;
-  background-color: rgb(224, 175, 140);
+  background: #3AAFA9;
   border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.card_button:hover {
+  background: #2B7A78;
+}
+
+.footer {
+  padding: 18px 0;
+  background: #17252A;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  color: #FEFFFF;
+  font-weight: lighter;
 }
