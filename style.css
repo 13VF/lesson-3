@@ -1,3 +1,7 @@
+body {
+  background-color: #171d2d;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-around;
@@ -15,8 +19,9 @@
   width: 100%;
   padding: 30px 30px 60px;
   margin: 0 15px 30px;
-  border: 1px solid black;
-  background-color: #f2f3f5;
+  border: 1px solid #313646;
+  background-color: #1d2333;
+  color: #e1e2e4;
   border-radius: 30px;
 }
 
@@ -28,6 +33,7 @@
 .card_button {
   padding: 6px 12px;
   border: none;
-  background-color: rgb(224, 175, 140);
+  background-color: #3485e4;
   border-radius: 3px;
+  color: aliceblue;
 }
